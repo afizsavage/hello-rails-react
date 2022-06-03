@@ -1,0 +1,54 @@
+Arguments: 
+  /Users/afizsavage/.nvm/versions/node/v18.1.0/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /Users/afizsavage/.nvm/versions/node/v18.1.0/bin:/Users/afizsavage/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/afizsavage/.nvm/versions/node/v18.1.0/bin:/Users/afizsavage/.rbenv/shims
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  18.1.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/afizsavage/projects/hello-rails-react/package.json: Unexpected token < in JSON at position 2
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+  <<<<<<< Updated upstream
+    "devDependencies": {
+      "stylelint": "^14.8.5",
+      "stylelint-config-standard": "^25.0.0",
+      "stylelint-csstree-validator": "^2.0.0",
+      "stylelint-scss": "^4.2.0"
+  =======
+    "dependencies": {
+      "@babel/preset-react": "^7.17.12",
+      "@rails/webpacker": "5.4.3",
+      "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+      "prop-types": "^15.8.1",
+      "react": "^18.1.0",
+      "react-dom": "^18.1.0",
+      "react_ujs": "^2.6.2",
+      "webpack": "^4.46.0",
+      "webpack-cli": "^3.3.12"
+    },
+    "devDependencies": {
+      "webpack-dev-server": "^3"
+  >>>>>>> Stashed changes
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
