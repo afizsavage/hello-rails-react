@@ -12,6 +12,10 @@
     "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "reselect": "^4.1.6",
     "webpack-dev-server": "^3"
   }
 }
