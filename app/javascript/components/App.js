@@ -12,7 +12,7 @@ class App extends React.Component {
         <BrowserRouter>
           <Routes>
             <Route exact path="/" element={<h1>Home</h1>} />
-            <Route path="/greeting" element={<Greeting message={'Hey!'} />} />
+            <Route path="/greeting" element={<Greeting />} />
           </Routes>
         </BrowserRouter>
       </Provider>

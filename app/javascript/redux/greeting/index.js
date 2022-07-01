@@ -3,11 +3,7 @@ const GET_MESSAGE_SUCCESS = 'greet/GET_MESSAGE_SUCCESS';
 
 // initial state
 const initialState = {
-  messages: [
-    {
-      message: 'Click the button to fetch messages',
-    },
-  ],
+  message: null,
 };
 
 // Actions
@@ -15,9 +11,9 @@ export const getMessagesAction = () => ({
   type: GET_MESSAGE_REQUEST,
 });
 
-export const getMessageSuccessAction = (json) => ({
+export const getMessageSuccessAction = (data) => ({
   type: GET_MESSAGE_SUCCESS,
-  json,
+  data,
 });
 
 // reducer
@@ -25,7 +21,7 @@ export const greetReducer = (state = initialState, action) => {
   console.log(action.type);
   switch (action.type) {
     case GET_MESSAGE_SUCCESS:
-      return { messages: action.json.greeting };
+      return { ...state, message: action.data.message };
     default:
       return state;
   }
